@@ -3,7 +3,9 @@
 
     <style>
         pre {font-size: 18px; font-weight: bold; display: inline;}
-        body {margin: 160px 320px;}
+        body {margin: 10px 260px 0px 300px;}
+        .catatan {position: relative; bottom: 65px;}
+        .button-keputusan {padding-left: 232px;}
     </style>
 
     <head>
@@ -19,7 +21,7 @@
             <br>
 
             <label for="nim">     <pre>NIM                   :</pre></label>
-            <input type="text" id="nim" name="nim" size="16" maxlength="10">
+            <input type="text" id="nim" name="nim" size="13" maxlength="10">
             <br>
             <br>
 
@@ -54,7 +56,36 @@
             <br>
             <br>
 
-            <label for="catatan"> <pre>CATATAN               :</pre></label>
+            <label for="catatan" class="catatan"> <pre>CATATAN               :</pre></label>
+            <textarea name="ta-catatan" cols="50" rows="5" placeholder="Masukkan Catatan (Opsional)"></textarea>
+            <br>
+            <br>
+
+            <label for="foto">    <pre>FOTO                  :</pre></label>
+            <input type="file" name="foto" accept="/image*">
+            <br>
+            <br>
+
+            <label for="email">   <pre>EMAIL                 :</pre></label>
+            <input type="text" id="email" name="email" size="26" maxlength="30">
+            <br>
+            <br>
+
+            <label for="sandi">      <pre>SANDI LOGIN           :</pre></label>
+            <input type="password" id="sandi" name="pw-sandi" size="26" maxlength="30">
+            <br>
+            <br>
+
+            <label for="ulangsandi"> <pre>ULANG SANDI LOGIN     :</pre></label>
+            <input type="password" id="ulangsandi" name="pw-ulangsandi" size="26" maxlength="30">
+            <br>
+            <br>
+        <div class="button-keputusan">
+            <input type="submit" name="submit-simpan" value="Simpan">
+            <input type="reset" name="reset-batal" value="Batal">
+            <input type="button" name="button-peringatan" value="Peringatan">
+        </div>
+
         </form>
     </body>
 </html>
